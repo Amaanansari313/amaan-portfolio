@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DEFAULT / DARK (Futurist - Deep Space) */
+    --background: #030303;
+    --foreground: #ffffff;
+    --primary: #2563EB;
+    --accent: #7c3aed;
+    --muted: #888888;
+
+    --font-inter: "Inter", sans-serif;
+    --font-space-grotesk: "Space Grotesk", sans-serif;
+  }
+
+  /* EXPLICIT DARK MODE (Deep Space) */
+  [data-theme="dark"] {
+    --background: #030303;
+    --foreground: #ffffff;
+    --primary: #2563EB;
+    --accent: #7c3aed;
+    --muted: #888888;
+  }
+
+  /* EXPLICIT LIGHT MODE (Minimalist / Solar / Paper) */
+  /* Distinct from Glacier: This is pure, warm readability */
+  [data-theme="light"] {
+    --background: #ffffff;
+    /* Pure White */
+    --foreground: #171717;
+    /* Neutral 900 */
+    --primary: #4f46e5;
+    /* Indigo */
+    --accent: #f59e0b;
+    /* Amber */
+    --muted: #737373;
+  }
+
+  /* CUSTOM: CYBERPUNK (Neon / Void) */
+  [data-theme="cyberpunk"] {
+    --background: #090014;
+    /* Deep Violet Black */
+    --foreground: #00ff9d;
+    /* Matrix Green Text */
+    --primary: #ff00ff;
+    /* Magenta */
+    --accent: #00ffff;
+    /* Cyan */
+    --muted: #6d28d9;
+  }
+
+  /* CUSTOM: LUXURY (Gold / Charcoal) */
+  [data-theme="luxury"] {
+    --background: #1c1917;
+    /* Warm Charcoal */
+    --foreground: #e7e5e4;
+    /* Warm Grey */
+    --primary: #d4af37;
+    /* Genuine Gold */
+    --accent: #a8a29e;
+    /* Stone */
+    --muted: #57534e;
+  }
+
+  /* CUSTOM: GLACIER (Frost / Ice) */
+  /* Distinct from Light: Highly saturated blue tint */
+  [data-theme="glacier"] {
+    --background: #e0f2fe;
+    /* Sky 100 - Very Blue Tint */
+    --foreground: #0c4a6e;
+    /* Sky 900 */
+    --primary: #0284c7;
+    /* Sky 600 */
+    --accent: #38bdf8;
+    /* Sky 400 */
+    --muted: #64748b;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased transition-colors duration-500;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
+
+.stroke-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--foreground);
+  opacity: 0.4;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary bg-opacity-30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary bg-opacity-50;
+}
