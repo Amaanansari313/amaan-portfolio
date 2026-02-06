@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Interactive3DCard from "../ui/Interactive3DCard";
 import TextScramble from "../ui/TextScramble";
 
@@ -63,10 +64,14 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                             <div key={index} className="group relative">
                                 <Interactive3DCard className="w-full h-auto md:aspect-video rounded-3xl overflow-hidden border border-white/10 bg-white/5 group">
                                     <div className="absolute inset-0 z-0">
-                                        <div
-                                            className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-all duration-700 bg-cover bg-center grayscale contrast-125"
-                                            style={{ backgroundImage: `url(${project.image})` }}
-                                        />
+                                        <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-all duration-700 grayscale contrast-125">
+                                            <Image
+                                                src={project.image}
+                                                alt={`${project.title} - ${project.description}`}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                         <div
                                             className="absolute inset-0 opacity-10 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
                                             style={{ background: `radial-gradient(circle at top right, ${project.color}, transparent)` }}
@@ -85,7 +90,11 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                                         <p className="text-sm text-muted-foreground/90 font-medium mb-6 line-clamp-3">
                                             {project.description}
                                         </p>
-                                        <Link href="#" className="text-[10px] md:text-xs uppercase font-black tracking-[0.3em] group-hover:text-primary transition-colors inline-flex items-center gap-2">
+                                        <Link
+                                            href={`/projects`}
+                                            aria-label={`View details for ${project.title}`}
+                                            className="text-[10px] md:text-xs uppercase font-black tracking-[0.3em] group-hover:text-primary transition-colors inline-flex items-center gap-2"
+                                        >
                                             VIEW DETAILS <span className="text-lg md:text-xl">→</span>
                                         </Link>
                                     </div>
@@ -133,7 +142,11 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                                         </p>
 
                                         <div className="mt-auto md:mt-0 pb-4 md:pb-0">
-                                            <Link href="#" className="inline-flex px-8 py-4 bg-foreground text-background rounded-full text-[10px] md:text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-all duration-300">
+                                            <Link
+                                                href={`/projects`}
+                                                aria-label={`View case study for ${project.title}`}
+                                                className="inline-flex px-8 py-4 bg-foreground text-background rounded-full text-[10px] md:text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-all duration-300"
+                                            >
                                                 VIEW CASE STUDY
                                             </Link>
                                         </div>
@@ -141,15 +154,14 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
 
                                     {/* Decorative Visual/Gradient */}
                                     <div className="absolute right-0 top-0 w-full md:w-[45%] h-full md:border-l border-white/10 overflow-hidden group pointer-events-none md:pointer-events-auto">
-                                        <div
-                                            className="absolute inset-0 z-0 opacity-10 md:opacity-40 group-hover:opacity-60 transition-all duration-1000"
-                                            style={{
-                                                backgroundImage: `url(${project.image})`,
-                                                backgroundSize: 'cover',
-                                                backgroundPosition: 'center',
-                                                filter: 'grayscale(1) contrast(1.2) brightness(0.8)'
-                                            }}
-                                        />
+                                        <div className="absolute inset-0 z-0 opacity-10 md:opacity-40 group-hover:opacity-60 transition-all duration-1000 grayscale contrast-125 brightness-[0.8]">
+                                            <Image
+                                                src={project.image}
+                                                alt={project.title}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                         <div
                                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] blur-[120px] opacity-20 md:opacity-30 z-10"
                                             style={{ background: `radial-gradient(circle at center, ${project.color}, transparent 70%)` }}

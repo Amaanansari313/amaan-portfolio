@@ -44,6 +44,7 @@ export default function Header() {
                 >
                     <Link
                         href="/"
+                        aria-label="Mo Aarif Portfolio Home"
                         className="text-xl font-black tracking-tighter group flex items-center gap-1"
                     >
                         <span className="bg-primary w-2 h-8 block rounded-full group-hover:h-4 transition-all duration-300" />
@@ -69,6 +70,7 @@ export default function Header() {
                     {/* Mobile Menu Toggle */}
                     <button
                         className="md:hidden p-2 text-foreground"
+                        aria-label="Open Mobile Menu"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <Menu size={24} />
@@ -97,6 +99,7 @@ export default function Header() {
                                 <span className="text-xs font-black uppercase tracking-[0.4em] text-primary/60">Command Center</span>
                                 <button
                                     onClick={() => setMobileMenuOpen(false)}
+                                    aria-label="Close Mobile Menu"
                                     className="w-12 h-12 flex items-center justify-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all group"
                                 >
                                     <X size={20} className="group-hover:rotate-90 transition-transform duration-300" />
@@ -147,15 +150,16 @@ export default function Header() {
                                         <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-6">Neural Links</span>
                                         <div className="flex gap-4">
                                             {[
-                                                { icon: <Github size={20} />, href: "https://github.com/moaarif-brt" },
-                                                { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/moaarif-brt" },
-                                                { icon: <Mail size={20} />, href: "mailto:moaarif.brt@gmail.com" }
+                                                { icon: <Github size={20} />, href: "https://github.com/moaarif-brt", label: "GitHub" },
+                                                { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/moaarif-brt", label: "LinkedIn" },
+                                                { icon: <Mail size={20} />, href: "mailto:moaarif.brt@gmail.com", label: "Email" }
                                             ].map((social, i) => (
                                                 <a
                                                     key={i}
                                                     href={social.href}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
+                                                    aria-label={social.label}
                                                     className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/5 rounded-full hover:border-primary/50 hover:text-primary transition-all"
                                                 >
                                                     {social.icon}

@@ -8,7 +8,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Selected Engineering Works | Mo Aarif",
         description: "Explore the technical archive of Mo Aarif, featuring high-performance software solutions.",
-    }
+    },
+    alternates: {
+        canonical: "https://moaarif.in/projects",
+    },
 };
 
 const jsonLd = [

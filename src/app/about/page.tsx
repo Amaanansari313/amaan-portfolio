@@ -4,6 +4,9 @@ export const metadata = {
     title: "About & Engineering Resume",
     description: "Digital resume of Mo Aarif. Exploration of professional experience in Full Stack Architecture, Python Development, and System Design.",
     keywords: ["Mo Aarif Resume", "SGSN Associates Developer", "Python Engineer India", "Full Stack Architect CV"],
+    alternates: {
+        canonical: "https://moaarif.in/about",
+    },
 };
 
 const jsonLd = {

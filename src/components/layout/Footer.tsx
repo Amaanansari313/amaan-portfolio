@@ -26,16 +26,17 @@ export default function Footer() {
                         </p>
                         <div className="flex items-center gap-6">
                             {[
-                                { icon: <Github size={18} />, href: "https://github.com/moaarif-brt" },
-                                { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/moaarif-brt" },
-                                { icon: <Twitter size={18} />, href: "#" },
-                                { icon: <Mail size={18} />, href: "mailto:moaarif.brt@gmail.com" }
+                                { icon: <Github size={18} />, href: "https://github.com/moaarif-brt", label: "GitHub Profile" },
+                                { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/moaarif-brt", label: "LinkedIn Profile" },
+                                { icon: <Twitter size={18} />, href: "#", label: "Twitter Profile" },
+                                { icon: <Mail size={18} />, href: "mailto:moaarif.brt@gmail.com", label: "Email Contact" }
                             ].map((social, i) => (
                                 <a
                                     key={i}
                                     href={social.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label={social.label}
                                     className="p-3 bg-white/5 border border-white/5 rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all hover:scale-110"
                                 >
                                     {social.icon}

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://moaarif.in",
   },
   openGraph: {
     title: "Mo Aarif | Full Stack Architect",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mo Aarif - Global System Architect",
+        alt: "Mo Aarif | Full Stack Architect Portfolio",
       },
     ],
     locale: "en_US",
@@ -87,13 +87,12 @@ const jsonLd = [
     "name": "Mo Aarif",
     "url": baseUrl,
     "jobTitle": "Full Stack Developer",
-    "knowsAbout": ["Python", "Django", "Next.js", "IoT", "Full Stack Development"],
-    "sameAs": [
-      "https://github.com/mo-aarif",
-      "https://linkedin.com/in/mo-aarif",
-      "https://twitter.com/moaarif"
+    "knowsAbout": [
+      "Python", "Django", "FastAPI", "Next.js", "React", "TypeScript",
+      "IoT Systems", "Full Stack Development", "Cloud Architecture",
+      "PostgreSQL", "Tailwind CSS", "Framer Motion"
     ],
-    "description": "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions."
+    "description": "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions. Expert in building high-performance scalable systems."
   },
   {
     "@context": "https://schema.org",
