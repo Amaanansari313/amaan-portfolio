@@ -30,7 +30,7 @@ export default function Contact({ mode = "simple" }: ContactProps) {
                             <div className="space-y-12">
                                 <div>
                                     <h2 className="text-6xl font-black tracking-tight mb-8 uppercase">
-                                        Open <span className="text-primary">Transmission</span>
+                                        <TextScramble text="Open" /> <span className="text-primary"><TextScramble text="Transmission" /></span>
                                     </h2>
                                     <p className="text-xl text-muted-foreground leading-relaxed font-medium">
                                         I specialize in building modular, scalable, and high-performance digital solutions.
@@ -124,8 +124,8 @@ export default function Contact({ mode = "simple" }: ContactProps) {
                     {/* Main Headline */}
                     <div className="text-center mb-16">
                         <h2 className="text-5xl md:text-[5.5rem] leading-[0.9] font-black tracking-tighter mb-8 uppercase">
-                            LET&#39;S BUILD THE <br />
-                            <span className="stroke-text opacity-80">NEXT </span>
+                            <TextScramble text="LET'S BUILD THE" /> <br />
+                            <span className="stroke-text opacity-80"><TextScramble text="NEXT" /> </span>
                             <TextScramble text="DECADE" />
                         </h2>
                         <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto leading-relaxed">

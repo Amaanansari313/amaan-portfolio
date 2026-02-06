@@ -51,7 +51,7 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="mb-12 md:mb-16">
                         <h2 className="text-4xl md:text-7xl font-black tracking-tight mb-4 uppercase">
-                            FULL <span className="text-primary">ARCHIVE</span>
+                            <TextScramble text="FULL" /> <span className="text-primary"><TextScramble text="ARCHIVE" /></span>
                         </h2>
                         <p className="text-muted-foreground text-base md:text-lg max-w-2xl font-medium">
                             A comprehensive collection of my engineering contributions and creative experiments.
@@ -81,7 +81,7 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                                                 </span>
                                             ))}
                                         </div>
-                                        <h3 className="text-xl md:text-2xl font-black mb-2 uppercase tracking-tighter">{project.title}</h3>
+                                        <h3 className="text-xl md:text-2xl font-black mb-2 uppercase tracking-tighter"><TextScramble text={project.title} /></h3>
                                         <p className="text-sm text-muted-foreground/90 font-medium mb-6 line-clamp-3">
                                             {project.description}
                                         </p>
@@ -103,7 +103,7 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
             <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden pl-[5vw]">
                 <div className="mb-12 pl-8">
                     <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter">
-                        SELECTED <span className="stroke-text opacity-100 italic">WORKS</span>
+                        <TextScramble text="SELECTED" /> <span className="stroke-text opacity-100 italic"><TextScramble text="WORKS" /></span>
                     </h2>
                 </div>
 

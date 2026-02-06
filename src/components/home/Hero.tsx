@@ -73,7 +73,7 @@ export default function Hero() {
                                 transition={{ delay: 1 }}
                                 className="text-primary font-black tracking-[0.4em] uppercase text-xs mb-8"
                             >
-                                Mo Aarif // Global System Architect
+                                <TextScramble text="Mo Aarif // Global System Architect" />
                             </motion.h2>
 
                             <h1 className="text-[12vw] md:text-[8vw] leading-[0.8] font-black italic tracking-tighter mb-12">
@@ -83,7 +83,7 @@ export default function Hero() {
                                         animate={{ y: 0 }}
                                         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                                     >
-                                        THE EDGE
+                                        <TextScramble text="THE EDGE" />
                                     </motion.span>
                                     <motion.div
                                         initial={{ x: "-100%" }}
@@ -99,7 +99,7 @@ export default function Hero() {
                                         transition={{ duration: 0.8, delay: 0.4 }}
                                         className="inline-block"
                                     >
-                                        OF REALITY
+                                        <TextScramble text="OF REALITY" />
                                     </motion.span>
                                 </span>
                             </h1>
@@ -123,11 +123,13 @@ export default function Hero() {
                                 >
                                     <div className="flex flex-col gap-1">
                                         <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Current Status</span>
-                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">Full-stack Developer @ SGSN Associates</span>
+                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">                                        <TextScramble text="Full-stack Developer @ SGSN Associates" />
+                                        </span>
                                     </div>
                                     <div className="flex flex-col gap-1">
                                         <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Specialization</span>
-                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">FULL STACK ARCHITECTURE</span>
+                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">                                        <TextScramble text="FULL STACK ARCHITECTURE" />
+                                        </span>
                                     </div>
                                 </motion.div>
                             </div>

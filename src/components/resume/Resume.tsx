@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import TextScramble from "../ui/TextScramble";
 import { Mail, AtSign, Phone, MapPin, Linkedin, Github, Download, Award, Briefcase, GraduationCap, Code, ShieldCheck, Terminal, Layers } from "lucide-react";
 
 export default function Resume() {
@@ -66,7 +67,7 @@ export default function Resume() {
                 <div className="p-8 md:p-12 border-b border-white/10 bg-gradient-to-br from-primary/10 via-transparent to-accent/5">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                         <div>
-                            <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-2 uppercase">Mo Aarif</h1>
+                            <h1 className="text-4xl md:text-5xl font-black tracking-tighter mb-2 uppercase"><TextScramble text="Mo Aarif" /></h1>
                             <p className="text-primary font-bold tracking-widest uppercase text-sm">Python Developer & Full Stack Architect</p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-[11px] text-muted-foreground font-bold uppercase tracking-widest">
@@ -95,7 +96,7 @@ export default function Resume() {
                     <section className="space-y-4">
                         <div className="flex items-center gap-4 text-primary">
                             <Terminal size={20} />
-                            <h2 className="text-lg font-black uppercase tracking-widest">Executive Summary</h2>
+                            <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Executive Summary" /></h2>
                             <div className="h-px flex-1 bg-white/10" />
                         </div>
                         <p className="text-muted-foreground leading-relaxed text-sm md:text-base font-medium">
@@ -110,7 +111,7 @@ export default function Resume() {
                     <section className="space-y-8">
                         <div className="flex items-center gap-4 text-primary">
                             <Code size={20} />
-                            <h2 className="text-lg font-black uppercase tracking-widest">Technical Arsenal</h2>
+                            <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Technical Arsenal" /></h2>
                             <div className="h-px flex-1 bg-white/10" />
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -133,7 +134,7 @@ export default function Resume() {
                     <section className="space-y-8">
                         <div className="flex items-center gap-4 text-primary">
                             <Briefcase size={20} />
-                            <h2 className="text-lg font-black uppercase tracking-widest">Experience</h2>
+                            <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Experience" /></h2>
                             <div className="h-px flex-1 bg-white/10" />
                         </div>
                         <div className="space-y-12">
@@ -164,7 +165,7 @@ export default function Resume() {
                     <section className="space-y-8">
                         <div className="flex items-center gap-4 text-primary">
                             <Layers size={20} />
-                            <h2 className="text-lg font-black uppercase tracking-widest">Key Engineering</h2>
+                            <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Key Engineering" /></h2>
                             <div className="h-px flex-1 bg-white/10" />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -182,7 +183,7 @@ export default function Resume() {
                     <section className="space-y-10">
                         <div className="flex items-center gap-4 text-primary">
                             <GraduationCap size={20} />
-                            <h2 className="text-lg font-black uppercase tracking-widest">Education</h2>
+                            <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Education" /></h2>
                             <div className="h-px flex-1 bg-white/10" />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
@@ -206,7 +207,7 @@ export default function Resume() {
                         <section className="space-y-6">
                             <div className="flex items-center gap-4 text-primary">
                                 <Award size={20} />
-                                <h2 className="text-lg font-black uppercase tracking-widest">Badges</h2>
+                                <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Badges" /></h2>
                                 <div className="h-px flex-1 bg-white/10" />
                             </div>
                             <div className="space-y-3">
@@ -227,7 +228,7 @@ export default function Resume() {
                         <section className="space-y-6">
                             <div className="flex items-center gap-4 text-primary">
                                 <ShieldCheck size={20} />
-                                <h2 className="text-lg font-black uppercase tracking-widest">Simulations</h2>
+                                <h2 className="text-lg font-black uppercase tracking-widest"><TextScramble text="Simulations" /></h2>
                                 <div className="h-px flex-1 bg-white/10" />
                             </div>
                             <div className="space-y-3">

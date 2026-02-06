@@ -11,47 +11,50 @@ interface TextScrambleProps {
     trigger?: boolean;
 }
 
-export default function TextScramble({ text, className, trigger = true }: TextScrambleProps) {
+export default function TextScramble({ text, className, trigger = false }: TextScrambleProps) {
     const [displayText, setDisplayText] = useState(text);
+    const [isAnimating, setIsAnimating] = useState(false);
 
-    useEffect(() => {
-        let interval: NodeJS.Timeout;
+    const scramble = () => {
+        if (isAnimating) return;
+        setIsAnimating(true);
 
-        if (trigger) {
-            let iteration = 0;
-            interval = setInterval(() => {
-                setDisplayText(() =>
-                    text
-                        .split("")
-                        .map((letter, index) => {
-                            if (index < iteration) {
-                                return text[index];
-                            }
-                            return CHARS[Math.floor(Math.random() * CHARS.length)];
-                        })
-                        .join("")
-                );
+        let iteration = 0;
+        const interval = setInterval(() => {
+            setDisplayText(() =>
+                text
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) {
+                            return text[index];
+                        }
+                        return CHARS[Math.floor(Math.random() * CHARS.length)];
+                    })
+                    .join("")
+            );
 
-                if (iteration >= text.length) {
-                    clearInterval(interval);
-                }
+            if (iteration >= text.length) {
+                clearInterval(interval);
+                setIsAnimating(false);
+            }
 
-                iteration += 1 / 2;
-            }, 30);
-        }
+            iteration += 1 / 3;
+        }, 30);
 
         return () => clearInterval(interval);
+    };
+
+    useEffect(() => {
+        if (trigger) {
+            scramble();
+        }
     }, [text, trigger]);
 
     return (
         <motion.span
             className={className}
-            onHoverStart={() => {
-                // Re-trigger logic could be added here if needed, 
-                // but for now keeping it simple to satisfy lint.
-                // If we want hover scramble, we need a separate effect or ref.
-                // For this "decoder" effect, usually it runs on mount/trigger.
-            }}
+            onHoverStart={scramble}
+            style={{ display: 'inline-block' }}
         >
             {displayText}
         </motion.span>

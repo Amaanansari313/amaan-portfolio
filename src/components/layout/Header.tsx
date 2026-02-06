@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import ThemeSwitcher from "../ui/ThemeSwitcher";
+import TextScramble from "../ui/TextScramble";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Header() {
@@ -46,8 +47,8 @@ export default function Header() {
                         className="text-xl font-black tracking-tighter group flex items-center gap-1"
                     >
                         <span className="bg-primary w-2 h-8 block rounded-full group-hover:h-4 transition-all duration-300" />
-                        <span>moaarif</span>
-                        <span className="text-primary">.in</span>
+                        <span><TextScramble text="moaarif" /></span>
+                        <span className="text-primary"><TextScramble text=".in" /></span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -117,7 +118,7 @@ export default function Header() {
                                             className="group flex items-end gap-4"
                                         >
                                             <span className="text-5xl md:text-7xl font-black tracking-tighter transition-all group-hover:text-primary group-hover:pl-4">
-                                                {link.name}
+                                                <TextScramble text={link.name} />
                                             </span>
                                             <span className="text-primary text-xl mb-3 opacity-0 group-hover:opacity-100 transition-all">/0{i + 1}</span>
                                         </Link>

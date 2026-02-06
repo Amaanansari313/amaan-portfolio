@@ -11,32 +11,52 @@ export const metadata: Metadata = {
     }
 };
 
-const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Mo Aarif's Engineering Projects",
-    "description": "Portfolio of selected software and IoT projects.",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "ICE Button SOS",
-            "description": "IoT-based emergency alert system."
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Sniper Bot",
-            "description": "Automated arbitrage trading bot."
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Safety System",
-            "description": "Real-time driver drowsiness detection."
-        }
-    ]
-};
+const jsonLd = [
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://moaarif.in"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://moaarif.in/projects"
+            }
+        ]
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Mo Aarif's Engineering Projects",
+        "description": "Portfolio of selected software and IoT projects.",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ICE Button SOS",
+                "description": "IoT-based emergency alert system."
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sniper Bot",
+                "description": "Automated arbitrage trading bot."
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Safety System",
+                "description": "Real-time driver drowsiness detection."
+            }
+        ]
+    }
+];
 
 export default function ProjectsPage() {
     return (

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import TextScramble from "../ui/TextScramble";
 
 const skills = [
     { name: "Python / Django", level: "Expert" },
@@ -57,11 +58,11 @@ export default function About() {
                             className="space-y-8"
                         >
                             <div>
-                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60 block mb-4">Biography</span>
+                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60 block mb-4"><TextScramble text="Biography" /></span>
                                 <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-tight">
-                                    CRAFTING<br />
-                                    <span className="stroke-text">DIGITAL</span><br />
-                                    LEGACIES.
+                                    <TextScramble text="CRAFTING" /><br />
+                                    <span className="stroke-text"><TextScramble text="DIGITAL" /></span><br />
+                                    <TextScramble text="LEGACIES." />
                                 </h2>
                             </div>
 
@@ -93,7 +94,7 @@ export default function About() {
                         {/* Skills Grid */}
                         <div className="space-y-12">
                             <div className="flex items-center gap-4">
-                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60">Core Technology</span>
+                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Core Technology" /></span>
                                 <div className="h-px flex-1 bg-white/10" />
                             </div>
 
@@ -122,7 +123,7 @@ export default function About() {
                         {/* Experience List */}
                         <div className="space-y-12">
                             <div className="flex items-center gap-4">
-                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60">Professional Path</span>
+                                <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Professional Path" /></span>
                                 <div className="h-px flex-1 bg-white/10" />
                             </div>
 
@@ -157,7 +158,7 @@ export default function About() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pt-16 border-t border-white/5">
                                 <div className="space-y-8">
                                     <div className="flex items-center gap-4">
-                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60">Education</span>
+                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Education" /></span>
                                         <div className="h-px flex-1 bg-white/10" />
                                     </div>
                                     <div className="space-y-6">
@@ -184,7 +185,7 @@ export default function About() {
 
                                 <div className="space-y-8">
                                     <div className="flex items-center gap-4">
-                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60">Certifications</span>
+                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Certifications" /></span>
                                         <div className="h-px flex-1 bg-white/10" />
                                     </div>
                                     <div className="space-y-4">
