@@ -128,7 +128,7 @@ export default function About() {
                             </div>
 
                             <div className="space-y-16">
-                                {experiences.map((exp, i) => (
+                                {experiences.map((exp) => (
                                     <motion.div
                                         key={exp.num}
                                         initial={{ opacity: 0, y: 40 }}
@@ -172,11 +172,11 @@ export default function About() {
                                         </div>
                                         <div className="pt-4 border-t border-white/5 space-y-4">
                                             <div>
-                                                <h6 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">Intermediate</h6>
+                                                <h5 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">Intermediate</h5>
                                                 <p className="text-[10px] text-muted-foreground">Digamber Jain Inter College • 2017</p>
                                             </div>
                                             <div>
-                                                <h6 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">High School</h6>
+                                                <h5 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">High School</h5>
                                                 <p className="text-[10px] text-muted-foreground">A. S. M. Siksha Mandir Inter College • 2014</p>
                                             </div>
                                         </div>

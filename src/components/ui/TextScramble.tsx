@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
 const CHARS = "-_~=+*&^%$#@!AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
@@ -15,7 +15,7 @@ export default function TextScramble({ text, className, trigger = false }: TextS
     const [displayText, setDisplayText] = useState(text);
     const [isAnimating, setIsAnimating] = useState(false);
 
-    const scramble = () => {
+    const scramble = useCallback(() => {
         if (isAnimating) return;
         setIsAnimating(true);
 
@@ -42,13 +42,14 @@ export default function TextScramble({ text, className, trigger = false }: TextS
         }, 30);
 
         return () => clearInterval(interval);
-    };
+    }, [isAnimating, text]);
 
     useEffect(() => {
         if (trigger) {
-            scramble();
+            const timeoutId = setTimeout(() => scramble(), 0);
+            return () => clearTimeout(timeoutId);
         }
-    }, [text, trigger]);
+    }, [trigger, scramble]);
 
     return (
         <motion.span

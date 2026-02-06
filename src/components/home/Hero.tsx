@@ -2,22 +2,27 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import MagneticButton from "../ui/MagneticButton";
 import TextScramble from "../ui/TextScramble";
 import Interactive3DCard from "../ui/Interactive3DCard";
-import { ArrowDown } from "lucide-react";
 
 function TimeDisplay() {
     const [time, setTime] = useState<string | null>(null);
 
-    useEffect(() => {
+    const updateTime = useCallback(() => {
         setTime(new Date().toLocaleTimeString());
-        const timer = setInterval(() => {
-            setTime(new Date().toLocaleTimeString());
-        }, 1000);
-        return () => clearInterval(timer);
     }, []);
+
+    useEffect(() => {
+        // Delay to avoid cascading render lint issue
+        const timeoutId = setTimeout(updateTime, 0);
+        const timer = setInterval(updateTime, 1000);
+        return () => {
+            clearTimeout(timeoutId);
+            clearInterval(timer);
+        };
+    }, [updateTime]);
 
     if (!time) return <span className="opacity-0">00:00:00 AM</span>;
     return <span>{time}</span>;
@@ -164,7 +169,8 @@ export default function Hero() {
                                     alt="Mo Aarif"
                                     fill
                                     priority
-                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    fetchPriority="high"
+                                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 500px, 400px"
                                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60 pointer-events-none" />

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://moaarif.in",
+    canonical: "https://moaarif.in/",
   },
   openGraph: {
     title: "Mo Aarif | Full Stack Architect",

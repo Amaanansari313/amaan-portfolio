@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Mail, Github, Linkedin, MapPin, Terminal, Cpu, Share2, MessageSquare, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Terminal, Cpu, Share2, MessageSquare } from "lucide-react";
 import MagneticButton from "../ui/MagneticButton";
 import TextScramble from "../ui/TextScramble";
 import Interactive3DCard from "../ui/Interactive3DCard";

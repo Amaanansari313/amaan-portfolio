@@ -2,16 +2,9 @@
 
 import { motion } from "framer-motion";
 import TextScramble from "../ui/TextScramble";
-import { Mail, AtSign, Phone, MapPin, Linkedin, Github, Download, Award, Briefcase, GraduationCap, Code, ShieldCheck, Terminal, Layers } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Download, Award, Briefcase, GraduationCap, Code, ShieldCheck, Terminal, Layers } from "lucide-react";
 
 export default function Resume() {
-    const skills = [
-        "Python", "Django", "Django REST Framework (DRF)", "Next.js", "React.js",
-        "PyQt", "Bootstrap", "Tailwind CSS", "Docker", "Git", "AWS", "Postman",
-        "SQLite", "MySQL", "PostgreSQL", "REST APIs", "Machine Learning",
-        "Image Processing", "OOP", "Data Structures", "Algorithms"
-    ];
-
     const experiences = [
         {
             role: "Full-stack Developer",

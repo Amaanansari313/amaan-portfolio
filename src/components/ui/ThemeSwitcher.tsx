@@ -15,13 +15,16 @@ export default function ThemeSwitcher({ variant = "dropdown" }: ThemeSwitcherPro
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
-        if (theme === "system") {
-            const t = ["light", "dark", "cyberpunk", "luxury", "glacier"];
-            const random = t[Math.floor(Math.random() * t.length)];
-            setTheme(random);
-        }
-    }, []);
+        const mountedTimeout = setTimeout(() => {
+            setMounted(true);
+            if (theme === "system") {
+                const t = ["light", "dark", "cyberpunk", "luxury", "glacier"];
+                const random = t[Math.floor(Math.random() * t.length)];
+                setTheme(random);
+            }
+        }, 0);
+        return () => clearTimeout(mountedTimeout);
+    }, [theme, setTheme]);
 
     if (!mounted) return null;
 
