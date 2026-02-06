@@ -119,21 +119,21 @@ export default function Header() {
                             <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-accent/20 blur-[120px] rounded-full delay-1000 animate-pulse" />
                         </div>
 
-                        <div className="relative z-10 flex flex-col h-full p-8 md:p-12">
+                        <div className="relative z-10 flex flex-col h-full overflow-y-auto p-6 xs:p-8 md:p-12 no-scrollbar">
                             {/* Header inside Menu */}
-                            <div className="flex justify-between items-center mb-20">
-                                <span className="text-xs font-black uppercase tracking-[0.4em] text-primary/60">Command Center</span>
+                            <div className="flex justify-between items-center mb-10 md:mb-20 shrink-0">
+                                <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.4em] text-primary/60">Command Center</span>
                                 <button
                                     onClick={() => setMobileMenuOpen(false)}
                                     aria-label="Close Mobile Menu"
-                                    className="w-12 h-12 flex items-center justify-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all group"
+                                    className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all group"
                                 >
                                     <X size={20} className="group-hover:rotate-90 transition-transform duration-300" />
                                 </button>
                             </div>
 
                             {/* Navigation Links */}
-                            <nav className="flex flex-col gap-8 mb-20">
+                            <nav className="flex flex-col gap-4 md:gap-8 mb-12 md:mb-20">
                                 {navLinks.map((link, i) => (
                                     <motion.div
                                         key={link.name}
@@ -144,25 +144,25 @@ export default function Header() {
                                         <Link
                                             href={link.href}
                                             onClick={() => setMobileMenuOpen(false)}
-                                            className="group flex items-end gap-4"
+                                            className="group flex items-end gap-3 md:gap-4"
                                         >
-                                            <span className="text-5xl md:text-7xl font-black tracking-tighter transition-all group-hover:text-primary group-hover:pl-4">
+                                            <span className="text-4xl xs:text-5xl md:text-7xl font-black tracking-tighter transition-all group-hover:text-primary group-hover:pl-4">
                                                 <TextScramble text={link.name} />
                                             </span>
-                                            <span className="text-primary text-xl mb-3 opacity-0 group-hover:opacity-100 transition-all">/0{i + 1}</span>
+                                            <span className="text-primary text-base md:text-xl mb-2 md:mb-3 opacity-0 group-hover:opacity-100 transition-all">/0{i + 1}</span>
                                         </Link>
                                     </motion.div>
                                 ))}
                             </nav>
 
                             {/* Footer Area: Themes & Socials */}
-                            <div className="mt-auto grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t border-white/5">
+                            <div className="mt-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-8 md:pt-12 border-t border-white/5 shrink-0">
                                 <motion.div
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ delay: 0.4 }}
                                 >
-                                    <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-6">Environment Settings</span>
+                                    <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-4 md:mb-6">Environment Settings</span>
                                     <ThemeSwitcher variant="grid" />
                                 </motion.div>
 
@@ -173,7 +173,7 @@ export default function Header() {
                                     className="flex flex-col justify-between"
                                 >
                                     <div>
-                                        <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-6">Neural Links</span>
+                                        <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-4 md:mb-6">Neural Links</span>
                                         <div className="flex gap-4">
                                             {[
                                                 { icon: <Github size={20} />, href: "https://github.com/moaarif-brt", label: "GitHub" },
@@ -186,7 +186,7 @@ export default function Header() {
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     aria-label={social.label}
-                                                    className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/5 rounded-full hover:border-primary/50 hover:text-primary transition-all"
+                                                    className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white/5 border border-white/5 rounded-full hover:border-primary/50 hover:text-primary transition-all"
                                                 >
                                                     {social.icon}
                                                 </a>
@@ -194,7 +194,7 @@ export default function Header() {
                                         </div>
                                     </div>
 
-                                    <div className="mt-12 md:mt-0 flex items-center gap-2">
+                                    <div className="mt-8 md:mt-0 flex items-center gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                                         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/80">System Online: v1.0.4</span>
                                     </div>
