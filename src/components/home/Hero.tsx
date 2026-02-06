@@ -67,14 +67,14 @@ export default function Hero() {
                                 Available for Architecture
                             </div>
 
-                            <motion.h2
+                            <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 1 }}
                                 className="text-primary font-black tracking-[0.4em] uppercase text-xs mb-8"
                             >
                                 <TextScramble text="Mo Aarif // Global System Architect" />
-                            </motion.h2>
+                            </motion.div>
 
                             <h1 className="text-[12vw] md:text-[8vw] leading-[0.8] font-black italic tracking-tighter mb-12">
                                 <span className="block stroke-text relative overflow-hidden">
@@ -164,6 +164,7 @@ export default function Hero() {
                                     alt="Mo Aarif"
                                     fill
                                     priority
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60 pointer-events-none" />

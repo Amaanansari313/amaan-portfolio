@@ -37,7 +37,7 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={social.label}
-                                    className="p-3 bg-white/5 border border-white/5 rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all hover:scale-110"
+                                    className="p-4 bg-white/5 border border-white/5 rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all hover:scale-110"
                                 >
                                     {social.icon}
                                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
 
                     {/* Navigation */}
                     <div className="space-y-6">
-                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">Neural Paths</h4>
+                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">Neural Paths</h3>
                         <nav className="flex flex-col gap-4 font-bold uppercase tracking-widest text-[11px]">
                             <Link href="/about" className="text-muted-foreground hover:text-foreground hover:pl-2 transition-all">About Archive</Link>
                             <Link href="/projects" className="text-muted-foreground hover:text-foreground hover:pl-2 transition-all">Project Log</Link>
@@ -58,7 +58,7 @@ export default function Footer() {
 
                     {/* System Info */}
                     <div className="space-y-6">
-                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">System Status</h4>
+                        <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">System Status</h3>
                         <div className="space-y-4 font-bold uppercase tracking-widest text-[10px] text-muted-foreground">
                             <div className="flex items-center gap-3">
                                 <Globe size={14} className="text-primary" />

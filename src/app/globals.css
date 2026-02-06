@@ -19,9 +19,9 @@
   [data-theme="dark"] {
     --background: #030303;
     --foreground: #ffffff;
-    --primary: #2563EB;
+    --primary: #1D4ED8;
     --accent: #7c3aed;
-    --muted: #888888;
+    --muted: #a3a3a3;
   }
 
   /* EXPLICIT LIGHT MODE (Minimalist / Solar / Paper) */

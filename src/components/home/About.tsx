@@ -145,7 +145,7 @@ export default function About() {
                                             <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest">{exp.company}</div>
                                         </div>
                                         <div className="md:col-span-8 pt-2">
-                                            <h4 className="text-2xl font-bold tracking-tight mb-4 group-hover:text-primary transition-colors">{exp.role}</h4>
+                                            <h3 className="text-2xl font-bold tracking-tight mb-4 group-hover:text-primary transition-colors">{exp.role}</h3>
                                             <p className="text-muted-foreground/80 leading-relaxed max-w-xl">
                                                 {exp.details}
                                             </p>
@@ -163,11 +163,11 @@ export default function About() {
                                     </div>
                                     <div className="space-y-6">
                                         <div>
-                                            <h5 className="font-bold text-foreground">BTech in Computer Science</h5>
+                                            <h4 className="font-bold text-foreground">BTech in Computer Science</h4>
                                             <p className="text-sm text-muted-foreground uppercase tracking-wider">Tula&#39;s Institute • 2021 - 2024</p>
                                         </div>
                                         <div>
-                                            <h5 className="font-bold text-foreground">Diploma in CSE</h5>
+                                            <h4 className="font-bold text-foreground">Diploma in CSE</h4>
                                             <p className="text-sm text-muted-foreground uppercase tracking-wider">Digamber Jain Polytechnic • 2018 - 2021</p>
                                         </div>
                                         <div className="pt-4 border-t border-white/5 space-y-4">

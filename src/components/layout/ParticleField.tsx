@@ -23,21 +23,22 @@ export default function ParticleField() {
 
         const initParticles = () => {
             particles = [];
-            const particleCount = Math.floor(window.innerWidth / 10);
+            // Cap particle count for better performance on large screens
+            const particleCount = Math.min(Math.floor(window.innerWidth / 15), 80);
             for (let i = 0; i < particleCount; i++) {
                 particles.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height,
-                    vx: (Math.random() - 0.5) * 0.5,
-                    vy: (Math.random() - 0.5) * 0.5,
-                    size: Math.random() * 2,
+                    vx: (Math.random() - 0.5) * 0.4,
+                    vy: (Math.random() - 0.5) * 0.4,
+                    size: Math.random() * 1.5,
                 });
             }
         };
 
         const draw = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = "rgba(100, 100, 255, 0.3)";
+            ctx.fillStyle = "rgba(100, 100, 255, 0.2)";
 
             particles.forEach((p, i) => {
                 p.x += p.vx;
@@ -56,9 +57,13 @@ export default function ParticleField() {
                     const p2 = particles[j];
                     const dx = p.x - p2.x;
                     const dy = p.y - p2.y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    // Optimization: Use squared distance to avoid Math.sqrt()
+                    const distSq = dx * dx + dy * dy;
+                    const maxDist = 100;
+                    const maxDistSq = maxDist * maxDist;
 
-                    if (distance < 100) {
+                    if (distSq < maxDistSq) {
+                        const distance = Math.sqrt(distSq);
                         ctx.beginPath();
                         ctx.strokeStyle = `rgba(100, 100, 255, ${0.1 - distance / 1000})`;
                         ctx.lineWidth = 0.5;

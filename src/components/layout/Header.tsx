@@ -19,6 +19,18 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Body Scroll Lock when mobile menu is open
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [mobileMenuOpen]);
+
     const navLinks = [
         { name: "About", href: "/about" },
         { name: "Projects", href: "/projects" },
@@ -63,6 +75,20 @@ export default function Header() {
                                 {link.name}
                             </Link>
                         ))}
+                        <Link
+                            href="https://linkedin.com/in/moaarif-brt"
+                            aria-label="LinkedIn Profile"
+                            className="p-4 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all text-muted-foreground hover:text-primary"
+                        >
+                            <Linkedin size={16} />
+                        </Link>
+                        <Link
+                            href="https://github.com/moaarif-brt"
+                            aria-label="GitHub Profile"
+                            className="p-4 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all text-muted-foreground hover:text-primary"
+                        >
+                            <Github size={16} />
+                        </Link>
                         <div className="w-px h-6 bg-white/10 mx-2" />
                         <ThemeSwitcher />
                     </nav>

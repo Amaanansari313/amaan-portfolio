@@ -12,21 +12,21 @@ const projects = [
         title: "ICE Button SOS",
         description: "IoT-based emergency alert system with automated transaction, device, and contact management using Python, Django, and AWS.",
         tech: ["Python", "Django", "AWS", "IoT"],
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
+        image: "",
         color: "#3B82F6"
     },
     {
         title: "Sniper Bot",
         description: "Automated arbitrage trading bot for Uniswap V2/V3 with real-time market analysis and honey pot detection.",
         tech: ["Python", "Blockchain", "Web3"],
-        image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2070&auto=format&fit=crop",
+        image: "",
         color: "#8B5CF6"
     },
     {
         title: "Safety System",
         description: "Real-time driver drowsiness detection using OpenCV and Haar cascades for high-accuracy gaze monitoring.",
         tech: ["OpenCV", "Python", "ML"],
-        image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2070&auto=format&fit=crop",
+        image: "",
         color: "#10B981"
     }
 ];
@@ -65,12 +65,15 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                                 <Interactive3DCard className="w-full h-auto md:aspect-video rounded-3xl overflow-hidden border border-white/10 bg-white/5 group">
                                     <div className="absolute inset-0 z-0">
                                         <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-all duration-700 grayscale contrast-125">
-                                            <Image
-                                                src={project.image}
-                                                alt={`${project.title} - ${project.description}`}
-                                                fill
-                                                className="object-cover"
-                                            />
+                                            {project.image && (
+                                                <Image
+                                                    src={project.image}
+                                                    alt={`${project.title} - ${project.description}`}
+                                                    fill
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                    className="object-cover"
+                                                />
+                                            )}
                                         </div>
                                         <div
                                             className="absolute inset-0 opacity-10 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
@@ -155,12 +158,15 @@ export default function Projects({ mode = "featured", limit }: ProjectsProps) {
                                     {/* Decorative Visual/Gradient */}
                                     <div className="absolute right-0 top-0 w-full md:w-[45%] h-full md:border-l border-white/10 overflow-hidden group pointer-events-none md:pointer-events-auto">
                                         <div className="absolute inset-0 z-0 opacity-10 md:opacity-40 group-hover:opacity-60 transition-all duration-1000 grayscale contrast-125 brightness-[0.8]">
-                                            <Image
-                                                src={project.image}
-                                                alt={project.title}
-                                                fill
-                                                className="object-cover"
-                                            />
+                                            {project.image && (
+                                                <Image
+                                                    src={project.image}
+                                                    alt={project.title}
+                                                    fill
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                    className="object-cover"
+                                                />
+                                            )}
                                         </div>
                                         <div
                                             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] blur-[120px] opacity-20 md:opacity-30 z-10"

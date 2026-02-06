@@ -198,7 +198,7 @@ export default function Contact({ mode = "simple" }: ContactProps) {
                     </div>
 
                     {/* Secondary Contact Info */}
-                    <div className="mt-24 pt-12 border-t border-white/5 w-full flex flex-col md:flex-row justify-between items-center gap-8 opacity-40">
+                    <div className="mt-24 pt-12 border-t border-white/5 w-full flex flex-col md:flex-row justify-between items-center gap-8 opacity-60">
                         <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
                             <Cpu size={14} className="text-primary" />
                             DEPLOYED FROM: DEHRADUN, INDIA
