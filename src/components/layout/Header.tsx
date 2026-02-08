@@ -56,7 +56,7 @@ export default function Header() {
                 >
                     <Link
                         href="/"
-                        aria_label="Amaan Ansari Portfolio Home"
+                        aria-label="Amaan Ansari Portfolio Home"
                         className="text-xl font-black tracking-tighter group flex items-center gap-1"
                     >
                         <span className="bg-primary w-2 h-8 block rounded-full group-hover:h-4 transition-all duration-300" />
