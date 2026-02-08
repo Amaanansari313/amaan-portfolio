@@ -2,9 +2,9 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: "Mo Aarif | Full Stack Architect",
-        short_name: "Mo Aarif",
-        description: "Professional portfolio of Mo Aarif, Full Stack Architect & Python Specialist.",
+        name: "Amaan Ansari | Full Stack Developer",
+        short_name: "Amaan Ansari",
+        description: "Professional portfolio of Amaan Ansari, Full Stack Developer & AI Specialist.",
         start_url: "/",
         display: "standalone",
         background_color: "#000000",

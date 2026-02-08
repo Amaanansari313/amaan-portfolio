@@ -9,23 +9,23 @@ import TextScramble from "../ui/TextScramble";
 
 const projects = [
     {
-        title: "ICE Button SOS",
-        description: "IoT-based emergency alert system with automated transaction, device, and contact management using Python, Django, and AWS.",
-        tech: ["Python", "Django", "AWS", "IoT"],
+        title: "WaterAI - CRM",
+        description: "AI-driven CRM & Smart Operations Platform for predictive maintenance, billing management & field operations.",
+        tech: ["Python", "AWS", "React.js", "DynamoDB"],
         image: "",
         color: "#3B82F6"
     },
     {
-        title: "Sniper Bot",
-        description: "Automated arbitrage trading bot for Uniswap V2/V3 with real-time market analysis and honey pot detection.",
-        tech: ["Python", "Blockchain", "Web3"],
+        title: "Face Recognition",
+        description: "Automated attendance system using Face Recognition with timestamp-based Excel logging.",
+        tech: ["Python", "OpenCV", "dlib", "HOG"],
         image: "",
         color: "#8B5CF6"
     },
     {
-        title: "Safety System",
-        description: "Real-time driver drowsiness detection using OpenCV and Haar cascades for high-accuracy gaze monitoring.",
-        tech: ["OpenCV", "Python", "ML"],
+        title: "Plant Disease AI",
+        description: "ML-based disease detection system for plant leaf identification using image classification.",
+        tech: ["React.js", "TensorFlow", "FastAPI"],
         image: "",
         color: "#10B981"
     }

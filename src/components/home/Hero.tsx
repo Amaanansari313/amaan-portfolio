@@ -78,7 +78,7 @@ export default function Hero() {
                                 transition={{ delay: 1 }}
                                 className="text-primary font-black tracking-[0.4em] uppercase text-xs mb-8"
                             >
-                                <TextScramble text="Mo Aarif // Global System Architect" />
+                                <TextScramble text="Amaan Ansari // Global System Architect" />
                             </motion.div>
 
                             <h1 className="text-[12vw] md:text-[8vw] leading-[0.8] font-black italic tracking-tighter mb-12">
@@ -116,8 +116,8 @@ export default function Hero() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.8 }}
                                 >
-                                    I am <span className="text-foreground font-bold underline decoration-primary/30 underline-offset-4">Mo Aarif</span>, a Python Developer based in <span className="text-foreground font-bold">Dehradun</span>.
-                                    Building scalable web systems with Django, React, and Next.js.
+                                    I am <span className="text-foreground font-bold underline decoration-primary/30 underline-offset-4">Amaan Ansari</span>, a Full Stack Developer based in <span className="text-foreground font-bold">Uttarakhand</span>.
+                                    Building scalable web systems with React, Node.js, and Modern Tech.
                                 </motion.p>
 
                                 <motion.div
@@ -128,7 +128,7 @@ export default function Hero() {
                                 >
                                     <div className="flex flex-col gap-1">
                                         <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Current Status</span>
-                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">                                        <TextScramble text="Full-stack Developer @ SGSN Associates" />
+                                        <span className="text-sm font-mono font-bold text-foreground tracking-tighter uppercase whitespace-nowrap">                                        <TextScramble text="Frontend Team Lead @ SGSN Associate" />
                                         </span>
                                     </div>
                                     <div className="flex flex-col gap-1">
@@ -165,8 +165,8 @@ export default function Hero() {
                         >
                             <Interactive3DCard className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
                                 <Image
-                                    src="/moaarif.jpg"
-                                    alt="Mo Aarif"
+                                    src="/amaan.jpg"
+                                    alt="Amaan Ansari"
                                     fill
                                     priority
                                     fetchPriority="high"
@@ -178,7 +178,7 @@ export default function Hero() {
                                 {/* UI Overlays on Image */}
                                 <div className="absolute top-6 left-6 flex flex-col gap-1">
                                     <span className="text-[8px] uppercase tracking-[0.3em] font-bold text-white/40">Identification</span>
-                                    <span className="text-[12px] font-black tracking-tighter text-white">AARIF_01.M</span>
+                                    <span className="text-[12px] font-black tracking-tighter text-white">AMAAN_01.M</span>
                                 </div>
 
                                 <div className="absolute bottom-6 right-6 flex flex-col items-end gap-1">

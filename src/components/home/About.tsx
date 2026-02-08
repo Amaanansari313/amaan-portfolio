@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import TextScramble from "../ui/TextScramble";
 
 const skills = [
-    { name: "Python / Django", level: "Expert" },
-    { name: "Django REST (DRF)", level: "Expert" },
-    { name: "Next.js / React", level: "Advanced" },
-    { name: "SQL (Postgres/MySQL)", level: "Senior" },
-    { name: "Docker / AWS", level: "Intermediate" },
-    { name: "PyQt (Desktop)", level: "Senior" },
-    { name: "Machine Learning", level: "Concepts" },
+    { name: "React.js / Next.js", level: "Expert" },
+    { name: "Python / FastAPI", level: "Expert" },
+    { name: "Node.js", level: "Advanced" },
+    { name: "AWS / Docker", level: "Intermediate" },
+    { name: "TensorFlow / OpenCV", level: "Intermediate" },
+    { name: "MySQL / DynamoDB", level: "Advanced" },
+    { name: "C++ / C", level: "Intermediate" },
     { name: "Git / Postman", level: "Tools" },
 ];
 
@@ -18,23 +18,16 @@ const experiences = [
     {
         num: "01",
         year: "2025 - PRESENT",
-        role: "Full-stack Developer",
-        company: "SGSN Associates Pvt Ltd",
-        details: "Orchestrating the convergence of web (Next.js) and desktop (PyQt) systems into a unified digital infrastructure."
+        role: "Frontend Team Lead",
+        company: "SGSN Associate Pvt Ltd",
+        details: "Leading front-end development, debugging, UI architecture, and performance optimization."
     },
     {
         num: "02",
         year: "2024 - 2025",
-        role: "Python Developer",
-        company: "Mobiloitte Technologies",
-        details: "Optimized RESTful APIs, strengthened security protocols for 1,000+ accounts, and streamlined development with reusable components."
-    },
-    {
-        num: "03",
-        year: "2021 - 2024",
-        role: "BTech Scholar",
-        company: "Tula's Institute",
-        details: "Deep-dived into Computer Science & Engineering with a focus on DSA, OOPS, and full-stack architecture."
+        role: "Software Developer Executive",
+        company: "Boon",
+        details: "Developed software solutions, managed development tasks, and contributed to system improvements."
     }
 ];
 
@@ -68,10 +61,10 @@ export default function About() {
 
                             <div className="space-y-6 text-muted-foreground/80 font-medium leading-relaxed">
                                 <p>
-                                    I am Mo Aarif. I don&#39;t just build applications; I architect digital systems that are as scalable as they are elegant.
+                                    I am Amaan Ansari. I don&#39;t just build applications; I architect digital systems that are as scalable as they are elegant.
                                 </p>
                                 <p>
-                                    Specializing in the Python ecosystem (Django, PyQt) and modern frontend (Next.js), I bridge the gap between complex backend logic and user-centric interfaces.
+                                    Specializing in AI/ML integration, Cloud Computing (AWS), and modern Full Stack development, I bridge the gap between complex backend logic and user-centric interfaces.
                                 </p>
                             </div>
 
@@ -163,37 +156,22 @@ export default function About() {
                                     </div>
                                     <div className="space-y-6">
                                         <div>
-                                            <h4 className="font-bold text-foreground">BTech in Computer Science</h4>
-                                            <p className="text-sm text-muted-foreground uppercase tracking-wider">Tula&#39;s Institute • 2021 - 2024</p>
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-foreground">Diploma in CSE</h4>
-                                            <p className="text-sm text-muted-foreground uppercase tracking-wider">Digamber Jain Polytechnic • 2018 - 2021</p>
-                                        </div>
-                                        <div className="pt-4 border-t border-white/5 space-y-4">
-                                            <div>
-                                                <h5 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">Intermediate</h5>
-                                                <p className="text-[10px] text-muted-foreground">Digamber Jain Inter College • 2017</p>
-                                            </div>
-                                            <div>
-                                                <h5 className="font-bold text-foreground/80 text-xs uppercase tracking-widest">High School</h5>
-                                                <p className="text-[10px] text-muted-foreground">A. S. M. Siksha Mandir Inter College • 2014</p>
-                                            </div>
+                                            <h4 className="font-bold text-foreground">B.Tech in Computer Science</h4>
+                                            <p className="text-sm text-muted-foreground uppercase tracking-wider">Uttarakhand Technical University • 2024</p>
+                                            <p className="text-xs text-primary mt-1">CGPA: 8.0</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="space-y-8">
                                     <div className="flex items-center gap-4">
-                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Certifications" /></span>
+                                        <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary/60"><TextScramble text="Positions of Resp." /></span>
                                         <div className="h-px flex-1 bg-white/10" />
                                     </div>
                                     <div className="space-y-4">
                                         {[
-                                            "OCI 2024 Generative AI Professional",
-                                            "Vertex AI Prompt Design (Skill Badge)",
-                                            "Deloitte Australia - Data Analytics",
-                                            "Software Engineering Virtual Experience"
+                                            "Front-End Team Lead @ SGSN",
+                                            "Head of AI & Cloud Integration @ WaterAI"
                                         ].map(cert => (
                                             <div key={cert} className="flex items-center gap-3 text-sm text-muted-foreground">
                                                 <div className="w-1 h-1 rounded-full bg-primary" />

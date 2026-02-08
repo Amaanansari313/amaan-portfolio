@@ -2,10 +2,10 @@ import Resume from "@/components/resume/Resume";
 
 export const metadata = {
     title: "About & Engineering Resume",
-    description: "Digital resume of Mo Aarif. Exploration of professional experience in Full Stack Architecture, Python Development, and System Design.",
-    keywords: ["Mo Aarif Resume", "SGSN Associates Developer", "Python Engineer India", "Full Stack Architect CV"],
+    description: "Digital resume of Amaan Ansari. Exploration of professional experience in Full Stack Development, AI/ML integration, and System Design.",
+    keywords: ["Amaan Ansari Resume", "SGSN Associate Developer", "Full Stack Engineer India", "AI Specialist CV"],
     alternates: {
-        canonical: "https://moaarif.in/about",
+        canonical: "https://amaanansari.in/about",
     },
 };
 
@@ -17,13 +17,13 @@ const jsonLd = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://moaarif.in"
+            "item": "https://amaanansari.in"
         },
         {
             "@type": "ListItem",
             "position": 2,
             "name": "About",
-            "item": "https://moaarif.in/about"
+            "item": "https://amaanansari.in/about"
         }
     ]
 };

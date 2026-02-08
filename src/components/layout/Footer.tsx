@@ -15,7 +15,7 @@ export default function Footer() {
                         <div>
                             <Link href="/" className="text-2xl font-black tracking-tighter group flex items-center gap-2">
                                 <span className="bg-primary w-2 h-8 block rounded-full" />
-                                <TextScramble text="MO AARIF" className="uppercase" />
+                                <TextScramble text="AMAAN ANSARI" className="uppercase" />
                                 <span className="text-primary">.IN</span>
                             </Link>
                         </div>
@@ -26,10 +26,10 @@ export default function Footer() {
                         </p>
                         <div className="flex items-center gap-6">
                             {[
-                                { icon: <Github size={18} />, href: "https://github.com/moaarif-brt", label: "GitHub Profile" },
-                                { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/moaarif-brt", label: "LinkedIn Profile" },
+                                { icon: <Github size={18} />, href: "https://github.com/Amaanansari313", label: "GitHub Profile" },
+                                { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/amaan-ansari-b01b37224", label: "LinkedIn Profile" },
                                 { icon: <Twitter size={18} />, href: "#", label: "Twitter Profile" },
-                                { icon: <Mail size={18} />, href: "mailto:moaarif.brt@gmail.com", label: "Email Contact" }
+                                { icon: <Mail size={18} />, href: "mailto:ansarizamil41@email.com", label: "Email Contact" }
                             ].map((social, i) => (
                                 <a
                                     key={i}
@@ -85,7 +85,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground opacity-60">
-                        &copy; {new Date().getFullYear()} Mo Aarif. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} Amaan Ansari. All Rights Reserved.
                     </p>
                     <div className="flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest text-muted-foreground opacity-60">
                         <span className="hidden md:inline">Built with Next.js & Framer Motion</span>

@@ -3,10 +3,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Start a Project",
-    description: "Get in touch with Mo Aarif for high-performance web systems, Python automation, or IoT architecture.",
-    keywords: ["Hire Python Developer", "Django Consultant India", "Contact Mo Aarif", "System Architecture Freelancer"],
+    description: "Get in touch with Amaan Ansari for high-performance web systems, AI automation, or Full Stack architecture.",
+    keywords: ["Hire Full Stack Developer", "React Consultant India", "Contact Amaan Ansari", "System Architecture Specialist"],
     alternates: {
-        canonical: "https://moaarif.in/contact",
+        canonical: "https://amaanansari.in/contact",
     },
 };
 
@@ -18,13 +18,13 @@ const jsonLd = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://moaarif.in"
+            "item": "https://amaanansari.in"
         },
         {
             "@type": "ListItem",
             "position": 2,
             "name": "Contact",
-            "item": "https://moaarif.in/contact"
+            "item": "https://amaanansari.in/contact"
         }
     ]
 };

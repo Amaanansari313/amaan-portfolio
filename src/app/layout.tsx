@@ -20,38 +20,38 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const baseUrl = "https://moaarif.in";
+const baseUrl = "https://amaanansari.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Mo Aarif | Full Stack Architect & Python Expert",
-    template: "%s | Mo Aarif"
+    default: "Amaan Ansari | Full Stack Developer & AI/ML Specialist",
+    template: "%s | Amaan Ansari"
   },
-  description: "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions. Building high-performance web systems and high-fidelity digital experiences.",
-  keywords: ["Mo Aarif", "Python Developer", "Full Stack Developer", "Django Expert", "Next.js", "IoT Engineer", "Dehradun Developer", "System Architect"],
-  authors: [{ name: "Mo Aarif" }],
-  creator: "Mo Aarif",
-  publisher: "Mo Aarif",
+  description: "Senior Full Stack Developer specializing in React, Node.js, AI/ML, and Cloud solutions. Building high-performance scalable web systems.",
+  keywords: ["Amaan Ansari", "Full Stack Developer", "AI Engineer", "React Developer", "Next.js", "Node.js", "Uttarakhand Developer", "System Architect"],
+  authors: [{ name: "Amaan Ansari" }],
+  creator: "Amaan Ansari",
+  publisher: "Amaan Ansari",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   alternates: {
-    canonical: "https://moaarif.in/",
+    canonical: "https://amaanansari.in/",
   },
   openGraph: {
-    title: "Mo Aarif | Full Stack Architect",
-    description: "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions.",
+    title: "Amaan Ansari | Full Stack Developer",
+    description: "Senior Full Stack Developer specializing in React, Node.js, AI/ML, and Cloud solutions.",
     url: baseUrl,
-    siteName: "Mo Aarif Portfolio",
+    siteName: "Amaan Ansari Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mo Aarif | Full Stack Architect Portfolio",
+        alt: "Amaan Ansari | Full Stack Engineer Portfolio",
       },
     ],
     locale: "en_US",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mo Aarif | Full Stack Architect",
-    description: "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions.",
-    creator: "@moaarif",
+    title: "Amaan Ansari | Full Stack Developer",
+    description: "Senior Full Stack Developer specializing in React, Node.js, AI/ML, and Cloud solutions.",
+    creator: "@Amaanansari313",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -84,20 +84,19 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Mo Aarif",
+    "name": "Amaan Ansari",
     "url": baseUrl,
     "jobTitle": "Full Stack Developer",
     "knowsAbout": [
-      "Python", "Django", "FastAPI", "Next.js", "React", "TypeScript",
-      "IoT Systems", "Full Stack Development", "Cloud Architecture",
-      "PostgreSQL", "Tailwind CSS", "Framer Motion"
+      "React", "Next.js", "Node.js", "Python", "FastAPI", "TensorFlow",
+      "AI/ML", "AWS", "Docker", "PostgreSQL", "Tailwind CSS", "System Design"
     ],
-    "description": "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions. Expert in building high-performance scalable systems."
+    "description": "Senior Full Stack Developer specializing in React, Node.js, and AI solutions. Expert in building high-performance scalable systems."
   },
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Mo Aarif Portfolio",
+    "name": "Amaan Ansari Portfolio",
     "url": baseUrl,
     "potentialAction": {
       "@type": "SearchAction",
@@ -108,8 +107,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Mo Aarif Engineering",
-    "image": `${baseUrl}/og-image.jpg`,
+    "name": "Amaan Ansari Engineering",
+    "image": `${baseUrl}/amaan.jpg`,
     "url": baseUrl,
     "telephone": "",
     "address": {

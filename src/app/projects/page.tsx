@@ -3,14 +3,14 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Projects Archive",
-    description: "A comprehensive archive of engineering projects by Mo Aarif, featuring Python bots, IoT systems, and full-stack web architectures.",
-    keywords: ["Python Projects", "IoT Portfolio", "Django Systems", "Next.js Apps", "Software Engineering Archive"],
+    description: "A comprehensive archive of engineering projects by Amaan Ansari, featuring AI/ML systems, cloud solutions, and full-stack web architectures.",
+    keywords: ["AI Projects", "Full Stack Portfolio", "React Systems", "Next.js Apps", "Software Engineering Archive"],
     openGraph: {
-        title: "Selected Engineering Works | Mo Aarif",
-        description: "Explore the technical archive of Mo Aarif, featuring high-performance software solutions.",
+        title: "Selected Engineering Works | Amaan Ansari",
+        description: "Explore the technical archive of Amaan Ansari, featuring high-performance software solutions.",
     },
     alternates: {
-        canonical: "https://moaarif.in/projects",
+        canonical: "https://amaanansari.in/projects",
     },
 };
 
@@ -23,39 +23,39 @@ const jsonLd = [
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://moaarif.in"
+                "item": "https://amaanansari.in"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Projects",
-                "item": "https://moaarif.in/projects"
+                "item": "https://amaanansari.in/projects"
             }
         ]
     },
     {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Mo Aarif's Engineering Projects",
-        "description": "Portfolio of selected software and IoT projects.",
+        "name": "Amaan Ansari's Engineering Projects",
+        "description": "Portfolio of selected software and AI projects.",
         "itemListElement": [
             {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "ICE Button SOS",
-                "description": "IoT-based emergency alert system."
+                "name": "WaterAI",
+                "description": "AI-driven CRM & Smart Operations Platform."
             },
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Sniper Bot",
-                "description": "Automated arbitrage trading bot."
+                "name": "Face Recognition",
+                "description": "Automated attendance system using Computer Vision."
             },
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "Safety System",
-                "description": "Real-time driver drowsiness detection."
+                "name": "Plant Disease AI",
+                "description": "ML-based disease detection for agriculture."
             }
         ]
     }

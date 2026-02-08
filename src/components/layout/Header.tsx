@@ -56,12 +56,12 @@ export default function Header() {
                 >
                     <Link
                         href="/"
-                        aria-label="Mo Aarif Portfolio Home"
+                        aria_label="Amaan Ansari Portfolio Home"
                         className="text-xl font-black tracking-tighter group flex items-center gap-1"
                     >
                         <span className="bg-primary w-2 h-8 block rounded-full group-hover:h-4 transition-all duration-300" />
-                        <span><TextScramble text="moaarif" /></span>
-                        <span className="text-primary"><TextScramble text=".in" /></span>
+                        <span><TextScramble text="amaan" /></span>
+                        <span className="text-primary"><TextScramble text="ansari" /></span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -76,14 +76,14 @@ export default function Header() {
                             </Link>
                         ))}
                         <Link
-                            href="https://linkedin.com/in/moaarif-brt"
+                            href="https://www.linkedin.com/in/amaan-ansari-b01b37224"
                             aria-label="LinkedIn Profile"
                             className="p-4 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all text-muted-foreground hover:text-primary"
                         >
                             <Linkedin size={16} />
                         </Link>
                         <Link
-                            href="https://github.com/moaarif-brt"
+                            href="https://github.com/Amaanansari313"
                             aria-label="GitHub Profile"
                             className="p-4 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all text-muted-foreground hover:text-primary"
                         >
@@ -176,9 +176,9 @@ export default function Header() {
                                         <span className="text-[10px] uppercase font-black tracking-[0.3em] text-muted-foreground block mb-4 md:mb-6">Neural Links</span>
                                         <div className="flex gap-4">
                                             {[
-                                                { icon: <Github size={20} />, href: "https://github.com/moaarif-brt", label: "GitHub" },
-                                                { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/moaarif-brt", label: "LinkedIn" },
-                                                { icon: <Mail size={20} />, href: "mailto:moaarif.brt@gmail.com", label: "Email" }
+                                                { icon: <Github size={20} />, href: "https://github.com/Amaanansari313", label: "GitHub" },
+                                                { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/amaan-ansari-b01b37224", label: "LinkedIn" },
+                                                { icon: <Mail size={20} />, href: "mailto:ansarizamil41@email.com", label: "Email" }
                                             ].map((social, i) => (
                                                 <a
                                                     key={i}

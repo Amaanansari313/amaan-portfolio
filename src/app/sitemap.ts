@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://moaarif.in";
+    const baseUrl = "https://amaanansari.in";
     const lastModified = new Date().toISOString().split('T')[0];
 
     return [

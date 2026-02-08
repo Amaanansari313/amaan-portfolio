@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: "/",
             },
         ],
-        sitemap: "https://moaarif.in/sitemap.xml",
+        sitemap: "https://amaanansari.in/sitemap.xml",
     };
 }

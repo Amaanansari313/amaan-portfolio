@@ -39,8 +39,8 @@ export default function Contact({ mode = "simple" }: ContactProps) {
 
                                 <div className="space-y-6">
                                     {[
-                                        { icon: Mail, label: "Email", val: "moaarif.brt@gmail.com", href: "mailto:moaarif.brt@gmail.com" },
-                                        { icon: MessageSquare, label: "Mobile", val: "+91 8430716493", href: "tel:+918430716493" },
+                                        { icon: Mail, label: "Email", val: "ansarizamil41@email.com", href: "mailto:ansarizamil41@email.com" },
+                                        { icon: MessageSquare, label: "Mobile", val: "+91 8077701409", href: "tel:+918077701409" },
                                         { icon: MapPin, label: "Base", val: "Dehradun, India", href: "#" }
                                     ].map((item, i) => (
                                         <motion.a
@@ -150,7 +150,7 @@ export default function Contact({ mode = "simple" }: ContactProps) {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
                         <Interactive3DCard className="w-full">
                             <a
-                                href="mailto:moaarif.brt@gmail.com"
+                                href="mailto:ansarizamil41@email.com"
                                 className="w-full p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl flex flex-col items-center gap-6 hover:bg-white/10 transition-colors group h-full"
                             >
                                 <div className="p-4 rounded-2xl bg-white/5 text-primary group-hover:scale-110 transition-transform">
@@ -165,7 +165,7 @@ export default function Contact({ mode = "simple" }: ContactProps) {
 
                         <Interactive3DCard className="w-full">
                             <a
-                                href="https://github.com/moaarif-brt"
+                                href="https://github.com/Amaanansari313"
                                 target="_blank"
                                 className="w-full p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl flex flex-col items-center gap-6 hover:bg-white/10 transition-colors group h-full"
                             >
@@ -181,7 +181,7 @@ export default function Contact({ mode = "simple" }: ContactProps) {
 
                         <Interactive3DCard className="w-full">
                             <a
-                                href="https://linkedin.com/in/moaarif-brt"
+                                href="https://www.linkedin.com/in/amaan-ansari-b01b37224"
                                 target="_blank"
                                 className="w-full p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl flex flex-col items-center gap-6 hover:bg-white/10 transition-colors group h-full"
                             >

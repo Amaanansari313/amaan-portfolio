@@ -5,8 +5,8 @@ import Contact from "@/components/home/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mo Aarif | Full Stack Architect & Python Expert",
-  description: "Senior Full Stack Architect specializing in Python, Django, Next.js, and IoT solutions. Explore the digital portfolio of Mo Aarif.",
+  title: "Amaan Ansari | Full Stack Developer & AI/ML Specialist",
+  description: "Senior Full Stack Developer specializing in React, Node.js, AI/ML, and Cloud solutions. Explore the digital portfolio of Amaan Ansari.",
 };
 
 export default function Home() {
