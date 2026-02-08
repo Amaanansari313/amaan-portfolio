@@ -12,21 +12,21 @@ const projects = [
         title: "WaterAI - CRM",
         description: "AI-driven CRM & Smart Operations Platform for predictive maintenance, billing management & field operations.",
         tech: ["Python", "AWS", "React.js", "DynamoDB"],
-        image: "",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&q=80",
         color: "#3B82F6"
     },
     {
         title: "Face Recognition",
         description: "Automated attendance system using Face Recognition with timestamp-based Excel logging.",
         tech: ["Python", "OpenCV", "dlib", "HOG"],
-        image: "",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=800&fit=crop&q=80",
         color: "#8B5CF6"
     },
     {
         title: "Plant Disease AI",
         description: "ML-based disease detection system for plant leaf identification using image classification.",
         tech: ["React.js", "TensorFlow", "FastAPI"],
-        image: "",
+        image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=1200&h=800&fit=crop&q=80",
         color: "#10B981"
     }
 ];
